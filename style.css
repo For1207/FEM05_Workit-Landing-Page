@@ -70,10 +70,19 @@ header {
   color: var(--bright-green-btn);
 }
 
-.header-content h1 {
+.header-content {
   margin-top: 4rem;
-  font-size: 3.125rem;
+}
+
+.header-content h1 {
+  font-size: 2.5rem;
   line-height: 3.65rem;
+  width: 21.44rem;
+  margin: 0 auto;
+}
+
+.left-spiral, .right-spiral {
+  display: none;
 }
 
 .header-content span {
@@ -180,11 +189,8 @@ main {
 }
 
 .founder {
-  border: 1px solid red;
   padding-bottom: 0;
 }
-
-
 
 .founder img {
   position: relative;
@@ -215,6 +221,10 @@ main {
   margin-top: 1.5rem;
 }
 
+.founder svg {
+  display: none;
+}
+
 footer .logo {
   margin: 4.625rem 0 3.625rem;
 }
@@ -225,3 +235,128 @@ footer .logo {
   width: 7.25rem;
   margin: 0 auto 4rem;
 }
+
+/* Tablet styles */
+
+@media  screen and (min-width: 768px) {
+  header {
+  }
+
+  .header-top {
+    padding: 2rem 2.5rem 0 2.5rem;
+  }
+
+  .header-content h1 {
+    font-size: 3.75rem;
+    width: 28rem;
+    line-height: 4.25rem;
+  }
+
+  .left-spiral, .right-spiral {
+    display: block;
+    position: absolute;
+  }
+
+  .left-spiral {
+    left: -14rem;
+    top: 5rem;
+  }
+
+  .right-spiral {
+    right: 0;
+    top: 0;
+    
+  }
+
+    img.hero-image {
+    width: 32.125rem;
+  }
+
+  .cards {
+    width: 35.8125rem;
+    margin: 0 auto;
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 3rem 6.125rem 0;
+    text-align: left;
+  }
+
+  .card span {
+    text-align: center;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+
+  }
+
+  .card-cont {
+    margin-left: 2rem;
+  }
+
+  .card h3, .card p {
+    width: 30.8125rem;
+  }
+
+  .card h3 {
+    margin-top: 0;
+  }
+
+  .card p {
+    margin-top: 1rem;
+  }
+
+  .founder {
+    width: 43rem;
+    margin: 0 auto;
+  }
+  .founder img {
+    display: block;
+    left: 0;
+  }
+
+  .founder p {
+    margin: 1.5rem; 
+    text-align: left;
+  }
+
+  .founder-msg {
+    margin: 0;
+    width: 32.125rem;
+    position: relative;
+    left: 11rem;
+    bottom: 5rem;
+    padding: ;
+
+  }
+
+  .founder-msg .btn {
+    display: block;
+    width: 10.75rem;
+    padding: 0.7rem 0;
+    margin-left: 1.5rem;
+  }
+
+  .founder svg {
+    display: block;
+    position: absolute;
+    width: 10.8125rem;
+    height: auto;
+    bottom: -5rem;
+    right: 1rem;
+  }
+
+  footer .logo {
+    margin: 0;
+  }
+
+  footer .social-media {
+    margin-top: 3.625rem;
+  }
+
+
+  
+} 
