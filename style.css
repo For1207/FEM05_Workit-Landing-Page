@@ -88,6 +88,13 @@ header {
   line-height: 2rem;
   padding: 0.72rem 1.45rem;
   display: inline-block;
+  border: 1px solid transparent;
+}
+
+.header-content .btn:hover, .founder-msg .btn:hover {
+  background-color: var(--dark-purple-bgn);
+  border: 1px solid var(--bright-green-btn);
+  color: var(--bright-green-btn);
 }
 
 /* Header's bottom curved edge */
