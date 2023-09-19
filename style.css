@@ -107,7 +107,6 @@ header {
 }
 
 /* Header's bottom curved edge */
-
 .curved-bottom-side {
   position: relative;
   overflow: hidden;
@@ -125,7 +124,6 @@ header {
   content: '';
   bottom: 2rem;
 }
-
 
 main {
   background-color: var(--light-pink-bgn);
@@ -168,7 +166,6 @@ main {
   color: var(--greyish-blue);
   line-height: 1.78rem;
 }
-
 
 .curved-bottom-side-pink {
   position: relative;
@@ -237,11 +234,7 @@ footer .logo {
 }
 
 /* Tablet styles */
-
 @media  screen and (min-width: 768px) {
-  header {
-  }
-
   .header-top {
     padding: 2rem 2.5rem 0 2.5rem;
   }
@@ -268,7 +261,7 @@ footer .logo {
     
   }
 
-    img.hero-image {
+  img.hero-image {
     width: 32.125rem;
   }
 
@@ -313,6 +306,7 @@ footer .logo {
     width: 43rem;
     margin: 0 auto;
   }
+
   .founder img {
     display: block;
     left: 0;
@@ -329,8 +323,6 @@ footer .logo {
     position: relative;
     left: 11rem;
     bottom: 5rem;
-    padding: ;
-
   }
 
   .founder-msg .btn {
@@ -356,7 +348,4 @@ footer .logo {
   footer .social-media {
     margin-top: 3.625rem;
   }
-
-
-  
 } 
