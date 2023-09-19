@@ -1,3 +1,220 @@
-body {
-  background-color: antiquewhite;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-purple-bgn: hsl(273, 85%, 13%);
+  --bright-green-btn: hsl(150, 100%, 63%);
+  --greyish-blue: hsl(271, 12%, 34%);
+  --light-pink-bgn: hsl(274, 100%, 99%);
+  --white: hsl(0, 0%, 100%);
+}
+
+@font-face {
+  font-family: 'Fraunces 144pt';
+  src: url(./assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url(./assets/fonts/manrope/Manrope-VariableFont_wght.ttf);
+}
+
+html {
+  font-family: Manrope, sans-serif;
+  font-size: 16px; /* font-size for mobile devices */
+  text-align: center;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Fraunces 144pt', serif;
+  font-weight: 600;
+}
+
+header, main, footer {
+  min-width: 375px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--dark-purple-bgn);
+  color: var(--white);
+  position: relative;
+}
+
+.header-top, .header-content, .card {
+  padding: 0 1rem;
+}
+.header-top {
+  padding: 2rem 1rem 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top svg {
+  width: 5.33rem;
+  height: 1.39rem;
+}
+
+.header-top p  {
+  border-bottom: 0.19rem solid var(--bright-green-btn);
+  padding-bottom: 0.125rem;
+  color: var(--white);
+}
+
+.header-top p:hover {
+  color: var(--bright-green-btn);
+}
+
+.header-content h1 {
+  margin-top: 4rem;
+  font-size: 3.125rem;
+  line-height: 3.65rem;
+}
+
+.header-content span {
+  border-bottom: 0.19rem solid var(--bright-green-btn);
+}
+
+.header-content .btn, .founder-msg .btn {
+  margin-top: 2.5rem;
+  background-color: var(--bright-green-btn);
+  color: var(--dark-purple-bgn);
+  font-weight: 700;
+  line-height: 2rem;
+  padding: 0.72rem 1.45rem;
+  display: inline-block;
+}
+
+/* Header's bottom curved edge */
+
+.curved-bottom-side {
+  position: relative;
+  overflow: hidden;
+  height: 6rem;
+  top: 4rem;
+}
+
+.curved-bottom-side::before {
+  border-radius: 100%;
+  position: absolute;
+  background-color: var(--dark-purple-bgn);
+  right: -12.5rem;
+  left: -12.5rem;
+  top: -10rem;
+  content: '';
+  bottom: 2rem;
+}
+
+
+main {
+  background-color: var(--light-pink-bgn);
+}
+
+.hero-image { 
+  position: relative;
+  width: 20rem;
+  height: auto;
+  top: -3rem;
+}
+
+.card {
+  background-color: var(--light-pink-bgn);
+  padding-top: 2.5rem;
+}
+
+.card span {
+  font-size: 1.25rem;
+  font-family: 'Fraunces 144pt', serif;
+  font-weight: 600;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  display: inline-block;
+  border: 1px solid var(--greyish-blue);
+  border-radius: 50%;
+}
+
+.card h3 {
+  margin-top: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--dark-purple-bgn);
+  line-height: 1.425;
+}
+
+.card p {
+  margin-top: 1rem;
+  color: var(--greyish-blue);
+  line-height: 1.78rem;
+}
+
+
+.curved-bottom-side-pink {
+  position: relative;
+  overflow: hidden;
+  height: 6rem;
+  top: 4rem;
+}
+
+.curved-bottom-side-pink::before  {
+  border-radius: 100%;
+  position: absolute;
+  background-color: var(--light-pink-bgn);
+  right: -12.5rem;
+  left: -12.5rem;
+  top: -10rem;
+  content: '';
+  bottom: 2rem;
+}
+
+.founder {
+  border: 1px solid red;
+  padding-bottom: 0;
+}
+
+
+
+.founder img {
+  position: relative;
+  margin-top: 5rem;
+  width: 17.5625rem;
+  top: 3.5rem;
+}
+
+.founder-msg {
+  position: relative;
+  margin: 0 1rem;
+  background-color: var(--dark-purple-bgn);
+  color: var(--white);
+  padding: 2rem;
+}
+
+.founder-msg h2 {
+  font-size: 2rem;
+  line-height: 2.286rem;
+}
+
+.founder-msg p {
+  margin-top: 1rem;
+  line-height: 1.75rem;
+}
+
+.founder-msg .btn {
+  margin-top: 1.5rem;
+}
+
+footer .logo {
+  margin: 4.625rem 0 3.625rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 7.25rem;
+  margin: 0 auto 4rem;
 }
