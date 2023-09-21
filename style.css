@@ -43,6 +43,7 @@ header {
   background-color: var(--dark-purple-bgn);
   color: var(--white);
   position: relative;
+  overflow: visible;
 }
 
 .header-top, .header-content, .card {
@@ -72,6 +73,7 @@ header {
 
 .header-content {
   margin-top: 4rem;
+  padding-bottom: 10rem;
 }
 
 .header-content h1 {
@@ -107,22 +109,12 @@ header {
 }
 
 /* Header's bottom curved edge */
-.curved-bottom-side {
-  position: relative;
-  overflow: hidden;
-  height: 6rem;
-  top: 4rem;
-}
-
-.curved-bottom-side::before {
-  border-radius: 100%;
+.curved-bottom {
+  fill: var(--dark-purple-bgn);
   position: absolute;
-  background-color: var(--dark-purple-bgn);
-  right: -12.5rem;
-  left: -12.5rem;
-  top: -10rem;
-  content: '';
-  bottom: 2rem;
+  width: 100%;
+  height: auto;
+  left: 0;
 }
 
 main {
