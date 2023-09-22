@@ -124,7 +124,7 @@ header {
 }
 
 .hero-img-cont {
-  padding-bottom: 6rem;
+  padding-bottom: 5rem;
 }
 .hero-image {
   display: block;
@@ -140,12 +140,12 @@ header {
 
 main {
   background-color: var(--light-pink-bgn);
-  padding-top: 4rem;
+  padding-top: 1.5rem;
 }
 
 .card {
   background-color: var(--light-pink-bgn);
-  /* padding-top: 2.5rem; */
+  padding-top: 2.5rem;
 }
 
 .card span {
@@ -231,6 +231,9 @@ footer .logo {
 
 /* Tablet styles */
 @media  screen and (min-width: 768px) {
+  header {
+    overflow: hidden;
+  }
   .header-top {
     padding: 2rem 2.5rem 0 2.5rem;
   }
