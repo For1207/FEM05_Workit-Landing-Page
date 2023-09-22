@@ -49,6 +49,7 @@ header {
 .header-top, .header-content, .card {
   padding: 0 1rem;
 }
+
 .header-top {
   padding: 2rem 1rem 0 1rem;
   display: flex;
@@ -109,28 +110,42 @@ header {
 }
 
 /* Header's bottom curved edge */
+.curved-bottom-cont {
+  background-color: var(--light-pink-bgn);
+  position: relative;
+}
+
 .curved-bottom {
+  position: relative;
   fill: var(--dark-purple-bgn);
-  position: absolute;
   width: 100%;
   height: auto;
-  left: 0;
+  overflow: hidden;
 }
+
+.hero-img-cont {
+  padding-bottom: 6rem;
+}
+.hero-image {
+  display: block;
+  position: absolute;
+  width: 20rem;
+  bottom: 0;
+  left: 50vw;
+  transform: translate(-50%);
+  margin: 0 auto;
+}
+
+
 
 main {
   background-color: var(--light-pink-bgn);
-}
-
-.hero-image { 
-  position: relative;
-  width: 20rem;
-  height: auto;
-  top: -3rem;
+  padding-top: 4rem;
 }
 
 .card {
   background-color: var(--light-pink-bgn);
-  padding-top: 2.5rem;
+  /* padding-top: 2.5rem; */
 }
 
 .card span {
@@ -159,24 +174,13 @@ main {
   line-height: 1.78rem;
 }
 
-.curved-bottom-side-pink {
-  position: relative;
-  overflow: hidden;
-  height: 6rem;
-  top: 4rem;
+.curved-bottom-cont.pink {
+  background-color: white;
 }
 
-.curved-bottom-side-pink::before  {
-  border-radius: 100%;
-  position: absolute;
-  background-color: var(--light-pink-bgn);
-  right: -12.5rem;
-  left: -12.5rem;
-  top: -10rem;
-  content: '';
-  bottom: 2rem;
+.curved-bottom.pink {
+  fill: var(--light-pink-bgn)
 }
-
 .founder {
   padding-bottom: 0;
 }
@@ -248,12 +252,12 @@ footer .logo {
   }
 
   .right-spiral {
-    right: 0;
-    top: 0;
+    right: -5rem;
+    top: 20rem;
     
   }
 
-  img.hero-image {
+  .hero-image {
     width: 32.125rem;
   }
 
@@ -267,7 +271,7 @@ footer .logo {
     justify-content: center;
     align-items: center;
     padding: 0;
-    margin: 3rem 6.125rem 0;
+    margin: 0 6.125rem ;
     text-align: left;
   }
 
