@@ -8,27 +8,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="">
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
       .container {
-        position: relative;
-        width: 75%;
-        height: 300px;
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .top-div {
         background-color: aquamarine;
+        height: 15rem;
+      }
+
+      .bottom-div {
+        position: relative;
       }
 
       svg {
-        width: 75%;
+        width: 100%;
         height: auto;
         fill: red;
+      }
 
+      img {
+        position: absolute;
+        width: 50%;
+        height: auto;
+        bottom: -7vi;
+        left: 50%;
+        transform: translate(-50%);
       }
     </style>
   </head>
   <body>
     <div class="container">
+      <div class="top-div"></div>
+      <div class="bottom-div">
+        <svg class="curved-bottom" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 478 125">
+          <path d="M0 0H478V72C287.408 139.962 182.585 142.822 0 72V0Z"/>
+        </svg>
+        <img class="hero-image" src="./assets/images/image-hero.webp" alt="hero image">
+      </div>  
     </div>
-    <svg class="curved-bottom" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 478 125">
-      <path d="M0 0H478V72C287.408 139.962 182.585 142.822 0 72V0Z"/>
-    </svg>
-
   </body>
 </html>
