@@ -223,9 +223,9 @@ footer .logo {
 }
 
 /* Tablet styles */
-@media  screen and (min-width: 768px) {
+@media  only screen and (min-width: 768px) {
   main {
-    padding-top: rem;
+    padding-top: 10rem;
   }
   header {
     overflow: hidden;
@@ -344,3 +344,53 @@ footer .logo {
     margin-top: 3.625rem;
   }
 } 
+
+@media only screen and (min-width: 1440px) {
+  html {
+    font-size: 18px;
+  }
+
+  main {
+    margin-top: 
+  }
+  
+  .cards {
+    display: flex;
+    margin: 2rem 9.17rem 0 9.17rem;
+    padding: 0;
+    width: 100%;
+  }
+
+  .card {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .cards, .card h3, .card p {
+    width: initial;
+  }
+
+  .card h3 {
+    margin-top: 3.11rem;
+  }
+
+  .card p {
+    margin-top: 1.75rem;
+  }
+
+  .founder {
+    width: auto;
+    margin: 0 10rem;
+  }
+
+  img.founder-img {
+    width: 26.5rem;
+  }
+
+  .founder-msg {
+    left: 21rem;
+    bottom: 12rem;
+  }
+}
