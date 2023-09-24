@@ -107,6 +107,7 @@ header {
   background-color: var(--dark-purple-bgn);
   border: 1px solid var(--bright-green-btn);
   color: var(--bright-green-btn);
+  cursor: pointer;
 }
 
 /* Header's bottom curved edge */
@@ -134,6 +135,10 @@ header {
 main {
   background-color: var(--light-pink-bgn);
   padding-top: 5.5rem;
+}
+
+.card:last-child {
+  padding-bottom: 4rem;
 }
 
 .card {
@@ -174,6 +179,7 @@ main {
 .curved-bottom.pink {
   fill: var(--light-pink-bgn)
 }
+
 .founder {
   padding-bottom: 0;
 }
@@ -257,7 +263,12 @@ footer .logo {
   }
 
   .hero-image {
-    width: 25.125rem;
+    width: 32.125rem;
+    bottom: -10rem;
+  }
+
+  main {
+    padding-top: 14rem;
   }
 
   .cards {
@@ -350,10 +361,14 @@ footer .logo {
     font-size: 18px;
   }
 
-  main {
-    margin-top: 
+  .hero-image {
+    bottom: -7rem;
   }
-  
+
+  main {
+    padding-top: 10rem;
+  }
+
   .cards {
     display: flex;
     margin: 2rem 9.17rem 0 9.17rem;
